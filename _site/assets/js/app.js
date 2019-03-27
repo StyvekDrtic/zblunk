@@ -1,5 +1,8 @@
-// Select all links with hashes
-$('a[href*="#"]')
+  // SMOOTH SCROLLING
+
+
+
+  $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')

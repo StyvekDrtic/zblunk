@@ -1,0 +1,237 @@
+h2 {
+  font-family: AveHeavy;
+  font-size: 29px;
+  color: #202020;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.mobilniSekce {
+  display: none !important;
+}
+
+h3 {
+  font-family: AveHeavy;
+  font-size: 26px;
+  color: #202020;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-family: AveRoman;
+  font-size: 16px;
+  color: rgba(32,32,32,0.42);
+  line-height: 27px;
+  margin: 0;
+}
+
+p {
+  font-family: AveMedium;
+  font-size: 16px;
+  color: #202020;
+  line-height: 27px;
+}
+
+.jumbotron {
+  height: 420px;
+  background: url("../img/pozadi.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .header {
+    width: 100%;
+    margin: 0 auto;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.6);
+
+    div {
+      width: calc(100% - 60px);
+      max-width: 840px;
+      display: block;
+      margin: 0 auto;
+
+      img {
+        display: inline-block;
+        width: 102px;
+        height: 28px;
+        margin-top: 14px;
+      }
+
+      a {
+        display: inline-block;
+        font-family: AveHeavy;
+        font-size: 14px;
+        color: #CBCBCB;
+        text-align: right;
+        text-decoration: none;
+        float: right;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .jumboMid {
+    margin-top: 55px;
+
+    h1 {
+      font-family: AveHeavy;
+      font-size: 30px;
+      color: #FFFFFF;
+      text-align: center;
+      width: 400px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+
+    nav {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+
+      a {
+        font-family: AveBlack;
+        font-size: 14px;
+        color: #202020;
+        letter-spacing: 2.6px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        background: #fff;
+        border-radius: 4px;
+        padding-top: 11px;
+        padding-bottom: 9px;
+        width: 150px;
+        display: inline-block;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+.telo {
+  width: calc(100%);
+  max-width: 1070px;
+  display: block;
+  margin: 0 auto;
+
+  .teloInner {
+    width: calc(100vh - 60px);
+    max-width: 840px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .mojeFotka {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+
+  .onas {
+    a {
+      color: #5A8BE3;
+      text-decoration: underline;
+      font-family: AveHeavy;
+    }
+  }
+
+  .sekce {
+    ul {
+      padding: 0;
+
+      li {
+        list-style: none;
+        height: 315px;
+        margin-bottom: 50px;
+
+        &:last-child {
+          margin-bottom: 100px;
+        }
+
+        .textSekce {
+          max-width: 470px;
+          display: inline-block;
+          margin-left: 50px;
+          vertical-align: middle;
+
+          .adminInfo {
+            font-family: AveHeavy;
+            margin: 0;
+          }
+
+          .dolu {
+            margin-bottom: 15px;
+          }
+
+          .linkZblunk {
+            display: inline-block;
+            font-family: Avenir-Roman;
+            font-size: 19px;
+            color: #B1B1B1;
+            text-decoration: none;
+          }
+        }
+
+        img {
+          width: 315px;
+          height: 315px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+.kontakt {
+  margin-bottom: 100px;
+  
+  a {
+    text-decoration: none;
+    color: #202020;
+    font-family: AveHeavy;
+  }
+
+  h4 {
+    margin-top: 10px;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 230px;
+  margin: 0 auto;
+  background-image: linear-gradient(-217deg, #424242 0%, #040407 100%);
+
+  p {
+    font-family: Avenir-Black;
+    font-size: 25px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 39px;
+    padding-top: 70px;
+    width: calc(100% - 60px);
+    display: block;
+    margin: 0 auto;
+    max-width: 840px;
+  }
+
+  span {
+    font-family: Avenir-Heavy;
+    font-size: 14px;
+    color: #CBCBCB;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+  }
+}
