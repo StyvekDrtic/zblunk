@@ -4,10 +4,28 @@ h2 {
   color: #202020;
   margin-top: 50px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 420px) {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
 }
 
 .mobilniSekce {
   display: none !important;
+  margin-top: 30px;
+  width: 100% !important;
+  max-width: 315px !important;
+  height: auto !important;
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 900px) {
+    display: block !important;
+  }
+
+  @media screen and (max-width: 420px) {
+    margin-bottom: 50px;
+  }
 }
 
 h3 {
@@ -33,6 +51,11 @@ p {
   font-size: 16px;
   color: #202020;
   line-height: 27px;
+
+  @media screen and (max-width: 410px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .jumbotron {
@@ -82,9 +105,14 @@ p {
       font-size: 30px;
       color: #FFFFFF;
       text-align: center;
-      width: 400px;
+      max-width: 400px;
+      width: calc(100% - 60px);
       margin: 0 auto;
       margin-bottom: 30px;
+
+      @media screen and (max-width: 450px) {
+        font-size: 24px;
+      }
     }
 
     nav {
@@ -92,6 +120,11 @@ p {
       width: 100%;
       margin: 0 auto;
       text-align: center;
+
+      .posledniDva {
+        position: relative;
+        left: -2px;
+      }
 
       a {
         font-family: AveBlack;
@@ -108,8 +141,29 @@ p {
         width: 150px;
         display: inline-block;
         margin: 10px;
+
+        @media screen and (max-width: 450px) {
+          margin: 5px;
+          width: 135px;
+        }
       }
     }
+
+    @media screen and (max-width: 420px) {
+      margin-top: 35px;
+    }
+
+    @media screen and (max-width: 366px) {
+      margin-top: 26px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    height: 380px;
+  }
+
+  @media screen and (max-width: 420px) {
+    height: 340px;
   }
 }
 
@@ -120,7 +174,7 @@ p {
   margin: 0 auto;
 
   .teloInner {
-    width: calc(100vh - 60px);
+    width: calc(100% - 60px);
     max-width: 840px;
     display: block;
     margin: 0 auto;
@@ -130,6 +184,10 @@ p {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 0;
+
+    @media screen and (max-width: 420px) {
+      margin-top: 30px;
+    }
   }
 
   .onas {
@@ -151,6 +209,10 @@ p {
 
         &:last-child {
           margin-bottom: 100px;
+
+          @media screen and (max-width: 420px) {
+            margin-bottom: 50px;
+          }
         }
 
         .textSekce {
@@ -175,6 +237,10 @@ p {
             color: #B1B1B1;
             text-decoration: none;
           }
+
+          @media screen and (max-width: 900px) {
+            margin-left: 0;
+          }
         }
 
         img {
@@ -182,6 +248,16 @@ p {
           height: 315px;
           display: inline-block;
           vertical-align: middle;
+
+          &:first-child {
+            @media screen and (max-width: 900px) {
+              display: none;
+            }
+          }
+        }
+
+        @media screen and (max-width: 900px) {
+          height: auto;
         }
       }
     }
@@ -190,7 +266,7 @@ p {
 
 .kontakt {
   margin-bottom: 100px;
-  
+
   a {
     text-decoration: none;
     color: #202020;
@@ -203,6 +279,10 @@ p {
 
   h2 {
     margin-bottom: 15px;
+  }
+
+  @media screen and (max-width: 420px) {
+    margin-bottom: 50px;
   }
 }
 
@@ -223,6 +303,14 @@ footer {
     display: block;
     margin: 0 auto;
     max-width: 840px;
+
+    @media screen and (max-width: 761px) {
+      padding-top: 55px;
+    }
+
+    @media screen and (max-width: 410px) {
+      padding-top: 35px;
+    }
   }
 
   span {

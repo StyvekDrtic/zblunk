@@ -2667,9 +2667,24 @@ h2 {
   color: #202020;
   margin-top: 50px;
   margin-bottom: 30px; }
+  @media screen and (max-width: 420px) {
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 15px; } }
 
 .mobilniSekce {
-  display: none !important; }
+  display: none !important;
+  margin-top: 30px;
+  width: 100% !important;
+  max-width: 315px !important;
+  height: auto !important;
+  margin-bottom: 100px; }
+  @media screen and (max-width: 900px) {
+    .mobilniSekce {
+      display: block !important; } }
+  @media screen and (max-width: 420px) {
+    .mobilniSekce {
+      margin-bottom: 50px; } }
 
 h3 {
   font-family: AveHeavy;
@@ -2692,6 +2707,10 @@ p {
   font-size: 16px;
   color: #202020;
   line-height: 27px; }
+  @media screen and (max-width: 410px) {
+    p {
+      font-size: 14px;
+      line-height: 24px; } }
 
 .jumbotron {
   height: 420px;
@@ -2730,14 +2749,21 @@ p {
       font-size: 30px;
       color: #FFFFFF;
       text-align: center;
-      width: 400px;
+      max-width: 400px;
+      width: calc(100% - 60px);
       margin: 0 auto;
       margin-bottom: 30px; }
+      @media screen and (max-width: 450px) {
+        .jumbotron .jumboMid h1 {
+          font-size: 24px; } }
     .jumbotron .jumboMid nav {
       display: block;
       width: 100%;
       margin: 0 auto;
       text-align: center; }
+      .jumbotron .jumboMid nav .posledniDva {
+        position: relative;
+        left: -2px; }
       .jumbotron .jumboMid nav a {
         font-family: AveBlack;
         font-size: 14px;
@@ -2753,6 +2779,22 @@ p {
         width: 150px;
         display: inline-block;
         margin: 10px; }
+        @media screen and (max-width: 450px) {
+          .jumbotron .jumboMid nav a {
+            margin: 5px;
+            width: 135px; } }
+    @media screen and (max-width: 420px) {
+      .jumbotron .jumboMid {
+        margin-top: 35px; } }
+    @media screen and (max-width: 366px) {
+      .jumbotron .jumboMid {
+        margin-top: 26px; } }
+  @media screen and (max-width: 450px) {
+    .jumbotron {
+      height: 380px; } }
+  @media screen and (max-width: 420px) {
+    .jumbotron {
+      height: 340px; } }
 
 .telo {
   width: calc(100%);
@@ -2760,7 +2802,7 @@ p {
   display: block;
   margin: 0 auto; }
   .telo .teloInner {
-    width: calc(100vh - 60px);
+    width: calc(100% - 60px);
     max-width: 840px;
     display: block;
     margin: 0 auto; }
@@ -2768,6 +2810,9 @@ p {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 0; }
+    @media screen and (max-width: 420px) {
+      .telo .mojeFotka {
+        margin-top: 30px; } }
   .telo .onas a {
     color: #5A8BE3;
     text-decoration: underline;
@@ -2780,6 +2825,9 @@ p {
       margin-bottom: 50px; }
       .telo .sekce ul li:last-child {
         margin-bottom: 100px; }
+        @media screen and (max-width: 420px) {
+          .telo .sekce ul li:last-child {
+            margin-bottom: 50px; } }
       .telo .sekce ul li .textSekce {
         max-width: 470px;
         display: inline-block;
@@ -2796,11 +2844,20 @@ p {
           font-size: 19px;
           color: #B1B1B1;
           text-decoration: none; }
+        @media screen and (max-width: 900px) {
+          .telo .sekce ul li .textSekce {
+            margin-left: 0; } }
       .telo .sekce ul li img {
         width: 315px;
         height: 315px;
         display: inline-block;
         vertical-align: middle; }
+        @media screen and (max-width: 900px) {
+          .telo .sekce ul li img:first-child {
+            display: none; } }
+      @media screen and (max-width: 900px) {
+        .telo .sekce ul li {
+          height: auto; } }
 
 .kontakt {
   margin-bottom: 100px; }
@@ -2812,6 +2869,9 @@ p {
     margin-top: 10px; }
   .kontakt h2 {
     margin-bottom: 15px; }
+  @media screen and (max-width: 420px) {
+    .kontakt {
+      margin-bottom: 50px; } }
 
 footer {
   width: 100%;
@@ -2829,6 +2889,12 @@ footer {
     display: block;
     margin: 0 auto;
     max-width: 840px; }
+    @media screen and (max-width: 761px) {
+      footer p {
+        padding-top: 55px; } }
+    @media screen and (max-width: 410px) {
+      footer p {
+        padding-top: 35px; } }
   footer span {
     font-family: Avenir-Heavy;
     font-size: 14px;
